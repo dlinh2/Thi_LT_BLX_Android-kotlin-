@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ExamActivity"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/idQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="cau"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/itemImage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="@id/ques1"
+            app:layout_constraintBottom_toTopOf="@id/AnswerGroup1"
+            app:layout_constraintStart_toStartOf="@id/idQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/ques1"
+            />
+
+        <TextView
+            android:id="@+id/ques1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Question"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/itemImage1"
+            app:layout_constraintStart_toStartOf="@id/idQuestion1"
+            app:layout_constraintTop_toBottomOf="@id/idQuestion1" />
+        <RadioGroup
+            android:id="@+id/AnswerGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below ="@+id/itemImage1"
+            android:layout_margin = "20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="end|center"
+            android:weightSum="1"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/ques1"
+            app:layout_constraintEnd_toEndOf="@id/ques1"
+            >
+
+            <RadioButton
+                android:id="@+id/answer1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|start"
+                android:gravity="end|start"
+                android:text="answer1"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/answer2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|start"
+                android:text="answer2_1"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/answer3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|start"
+                android:gravity="end|start"
+                android:text="answer3"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/answer4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|start"
+                android:gravity="end|start"
+                android:text="answer4"
+                android:textColor="@color/black"
+
+                />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootScream"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple1"
+        android:gravity="center"
+        android:text="Thi Bằng Lái Xe Máy"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rootScream"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/CloseButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/title"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/title"-->
+<!--            android:backgroundTint="@color/purple1"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:src="@drawable/close_white_36dp"-->
+<!--            />-->
+
+        <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cấu trúc đề thi và yêu cầu đề:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+    <TextView
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian làm bài: 19 phút"
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/content"
+        app:layout_constraintTop_toBottomOf="@id/content" />
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số câu hỏi: 25 câu"
+        android:textSize="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/content1"
+        app:layout_constraintTop_toBottomOf="@id/content1" />
+    <TextView
+        android:id="@+id/content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mỗi câu hỏi trong đề sát hạch có từ 02 đến 04 ý trả lời và chỉ có 01 ý trả lời đúng nhất."
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/content2"
+        app:layout_constraintTop_toBottomOf="@id/content2" />
+    <TextView
+        android:id="@+id/content4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trong số các câu hỏi, có 01 câu trả lời sai (câu hỏi điểm liệt) sẽ bị truất quyền sát hạch."
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/content3"
+        app:layout_constraintTop_toBottomOf="@id/content3" />
+    <TextView
+        android:id="@+id/content5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mỗi câu hỏi chỉ có duy nhất 1 đáp án đúng."
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/content4"
+        app:layout_constraintTop_toBottomOf="@id/content4"/>
+    <TextView
+        android:id="@+id/content6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết thúc bài thi, thí sinh đạt 21/25 điểm trở lên và không sai câu hỏi điểm liệt là đạt."
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/content5"
+        app:layout_constraintTop_toBottomOf="@id/content5"/>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:backgroundTint="@color/purple1"
+            android:text="Bắt Đầu"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/rootScream"
+            app:layout_constraintTop_toBottomOf="@id/content6"
+            app:cornerRadius="10dp"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
